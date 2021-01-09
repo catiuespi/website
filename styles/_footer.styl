@@ -1,0 +1,39 @@
+.footer
+	background #e0e0e0
+	display flex
+	flex-direction column
+	padding 1em 1em 56px
+	
+	@media screen and (min-width: 720px)
+		padding 1em 1em 0
+		
+	&__primary
+		display flex
+		justify-content space-between
+
+	&__secondary
+		display flex
+		flex-direction column
+		
+	&__logo
+		align-items center
+		display flex
+		fill $color-2
+		
+		> .art
+			height 32px
+			width 64px
+			
+	&__social-media
+		align-items center
+		display flex
+		
+	&__links
+		padding 1em 0
+		color #212121
+		
+	&__copyright
+		display flex
+		font 1.2em 'Open Sans', sans-serif
+		padding 0 1em 1em
+	

@@ -1,0 +1,59 @@
+.spacer
+	background $bg
+	display flex
+	flex 1
+
+.side-app-bar
+	filter drop-shadow(0 -1px 4px rgba(0,0,0,.2))
+	bottom 0
+	display flex
+	flex-direction row
+	height 56px
+	position fixed
+	left 0
+	width 100%
+	z-index 1
+	
+	@media screen and (min-width: 720px)
+		flex-direction column
+		height 100%
+		width 80px
+
+	&__button
+		align-items center
+		display flex
+		flex-direction column
+		font-weight 500
+		font 1.2em 'Open Sans', sans-serif
+		height 56px
+		justify-content center
+		letter-spacing .1px
+		position relative
+		text-transform uppercase
+		
+		@media screen and (min-width: 480px)
+			> .text
+				display none
+		
+		@media screen and (min-width: 480px)
+			flex-direction row
+			
+		@media screen and (min-width: 720px)
+			height 80px
+			flex-direction column
+		
+		> .icon
+				margin-bottom 4px
+				
+				@media screen and (min-width: 480px)
+					margin 0 6px 0 0
+					
+				@media screen and (min-width: 720px)
+					margin 0 0 4px 0
+			
+.fab-slot
+	background-image radial-gradient(circle 80px at center 6px,transparent 45%, #fff 46%)
+	width 100px
+	
+	@media screen and (min-width: 720px)
+		display none

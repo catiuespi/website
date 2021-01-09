@@ -1,0 +1,120 @@
+.terms-card, .privacy-card
+	background #fff
+	border-radius 8px
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.1)
+	color #000
+	display flex
+	flex-direction column
+	margin 4em
+	padding 4em
+	overflow hidden
+	transition transform .3s
+	
+	&__title
+		display inline-flex
+		flex-direction column
+		font-weight 400
+		font 2em 'Prototype', sans-serif
+		letter-spacing 1px
+		padding-bottom .5em
+		
+	&__body
+		font 1.6em / 1.5em "Open Sans", sans-serif
+		font-weight 500
+		margin-bottom 1em
+		
+	&__list
+		font 1.6em / 1.5em "Open Sans", sans-serif
+		font-weight 500
+		margin 0 2em 1em 2em
+
+.project-card
+	background #fff
+	border-radius 8px
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.1)
+	display flex
+	flex-direction column
+	opacity 0
+	overflow hidden
+	transition transform .3s
+	
+	&:hover
+		transform scale(1.033)
+	
+	&__media
+		display flex
+		justify-content center
+	
+	&__primary
+		font 1.4em 'Open Sans', sans-serif
+		font-weight 400
+		color rgba(0,0,0,1)
+		flex 1
+		padding 16px
+	
+	&__actions
+		border-top solid 1px #eee
+		display flex
+		justify-content flex-end
+		padding 8px
+		
+.service-card
+	align-items center
+	display flex
+	flex-direction column
+	padding 16px
+	width 100%
+	
+	@media screen and (min-width: 480px)
+		width 50%
+		
+	@media screen and (min-width: 1280px)
+		width 25%
+	
+	&__text
+		font 28px 'Prototype', sans-serif
+		letter-spacing 1px
+		margin-top 16px
+		text-align center
+	
+.form-card
+	opacity 0
+	background #fff
+	box-shadow 0 2px 4px 0 rgba(0,0,0,.1)
+	border-radius 8px
+	padding 16px
+	min-width 240px
+	max-width 400px
+	width 100%
+	
+	@media screen and (min-width: 1280px)
+		min-width 400px
+	
+	&__title
+		font 1.6em 'Prototype', sans-serif
+		color rgba(0,0,0,.87)
+		letter-spacing 1px
+		margin-bottom 8px
+	
+	&__actions
+		display flex
+		justify-content space-between
+		
+	&__others
+		display flex
+		
+	&__contact-other
+		align-items center
+		border-radius 2px
+		display flex
+		font 1.4em 'Open Sans', sans-serif
+		font-weight 600
+		justify-content center
+		margin-right 8px
+		text-transform uppercase
+		
+#add-more
+	background $color
+
+#project-ubiz
+	background #FFCC00

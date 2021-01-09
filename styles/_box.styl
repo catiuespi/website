@@ -1,0 +1,236 @@
+.hero-box
+	align-items center
+	background url("images/bg.svg"), #fff
+	background-repeat no-repeat
+	display flex
+	flex-direction column
+	height 584px
+	justify-content center
+	@media screen and (min-width: 720px)
+		flex-direction row
+
+	&__media
+		@media screen and (min-width: 720px)
+			margin-right 3em
+			width 12.5%
+		
+		> .art
+			fill #fff
+			width 125px
+			height 125px
+			@media screen and (min-width: 720px)
+				width 100%
+
+	&__text
+		color #fff
+		font 6vw 'Prototype', sans-serif
+		@media screen and (min-width: 720px)
+			font-size 3vw
+	
+	&__line-1
+		letter-spacing .2vw
+	
+	&__line-2
+		letter-spacing .31vw
+		
+	&__line-3
+		font-size 4vw
+		letter-spacing 1px
+		padding-top 4px
+		text-align center
+		@media screen and (min-width: 720px)
+			font-size 2vw
+
+.services-box
+	background #fff
+	padding 16px 16px 48px
+	
+	&__cards
+		display flex
+		flex-wrap wrap
+		justify-content space-around
+		
+		@media screen and (min-width: 720px)
+			flex-direction row
+	
+	&__action
+		margin 48px 0
+		display flex
+		justify-content center
+		
+.company-box
+	display flex
+	flex-direction column
+	font 2em/1.5em 'Open Sans', sans-serif
+	justify-content center
+	padding 2em
+		
+	&__list
+		font-weight 500
+		
+	&__list-item
+		display flex
+	
+		> .icon
+			margin 2px 8px 0 0
+
+	&__about
+		font-weight 500
+		margin-bottom 1em
+		
+	&__logo
+		@media screen and (min-width: 720px)
+			padding-right 3em
+
+	&__text
+		display inline-flex
+		flex-direction column
+		justify-content center
+		
+	&__title
+		display inline-flex
+		flex-direction column
+		font-weight 400
+		font 28px 'Prototype', sans-serif
+		letter-spacing 1px
+		padding-bottom .5em
+		
+		@media screen and (min-width: 720px)
+			align-items flex-start
+		
+		&::after
+			content ''
+			background $bg
+			margin-top 4px
+			width 125px
+			height 6px
+			border-radius (@height/2)
+
+.benefits-box
+	align-items center
+	background #fff
+	display flex
+	flex-direction column
+	padding 2em 3em
+	@media screen and (min-width: 720px)
+		flex-direction row
+		
+.project-box
+	padding 2em 4em
+	
+	&__cards
+		justify-content center
+		display grid
+		grid-template-columns repeat(auto-fill, minmax(240px, 1fr))
+		grid-auto-rows auto
+		grid-gap 2em
+		
+	&__title
+		color $color
+		display inline-flex
+		flex-direction column
+		font-weight 500
+		font 28px 'Prototype', sans-serif
+		padding-bottom .5em
+		
+		&::after
+			content ''
+			background $color
+			margin-top 4px
+			width 125px
+			height 6px
+			border-radius (@height/2)
+
+.contact-box
+	display flex
+	flex-direction column
+	padding 4em
+	
+	@media screen and (min-width: 1024px)
+		flex-direction row
+	
+	&__content
+		flex-direction column
+		font 2em / 1.5em "Open Sans", sans-serif
+		font-weight 500
+		justify-content center
+		padding-right 0
+		flex 1
+		
+		@media screen and (min-width: 1024px)
+			padding-right 4em
+		
+	&__paragraph
+		margin-bottom 2em
+		
+		@media screen and (min-width: 1024px)
+			margin-bottom 1em
+
+	&__arrow
+		display none
+		flex-grow 1
+		width 100%
+		height 100%
+		
+		> .svg
+			flex-grow 1
+		
+		@media screen and (min-width: 1024px)
+			display block
+	
+	&__list
+		display flex
+		flex-direction column
+		justify-content center
+	
+	&__list-item
+		display flex
+		
+		> .icon
+			margin 2px 8px 0 0
+	
+	&__content
+		display flex
+	
+	&__form
+		display flex
+		flex-direction column
+		justify-content center
+		
+		@media screen and (min-width: 480px)
+			flex-direction row
+
+	&__title
+		display inline-flex
+		flex-direction column
+		font-weight 400
+		font 28px 'Prototype', sans-serif
+		letter-spacing 1px
+		padding-bottom .5em
+		
+		@media screen and (min-width: 720px)
+			align-items flex-start
+		
+		&::after
+			content ''
+			background $bg
+			margin-top 4px
+			width 125px
+			height 6px
+			border-radius (@height/2)
+	
+
+.fade-in-bottom
+	opacity 0
+	animation fade-in-bottom .6s cubic-bezier(0.0, 0.0, 0.2, 1) .3s forwards
+	
+@keyframes fade-in-bottom 
+	0% 
+		transform translateY(40px)
+
+	100% 
+		transform translateY(0)
+		opacity 1
+	
+
+

@@ -1,0 +1,27 @@
+- image_source = ''
+
+mixin icon(icon)
+	svg.icon
+		use("xlink:href"=`icons.svg#${icon}`)
+		
+mixin art(art)
+	svg.art
+		use("xlink:href"=`icons.svg#${art}`)
+		
+mixin svg(svg)
+	svg.svg
+		use("xlink:href"=`icons.svg#${svg}`)
+		
+mixin text(text)
+	=text
+
+mixin title(title)
+	div=title
+
+mixin pict(img)
+	picture
+		source(srcset=`${image_source}/${img}.png` type="image/png")
+		source(srcset=`${image_source}/${img}.avif` type="image/avif")
+		source(srcset=`${image_source}/${img}.webp` type="image/webp")
+		img.image(src=`${image_source}/${img}.jp2` type="image/jp2")
+		
